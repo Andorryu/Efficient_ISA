@@ -1,0 +1,17 @@
+OP      ALUOP[1]    ALUOP[0]    ALUS    ALUI    ALUARI  ALULEF  ALUSUB  BT  JR  J   WriRT   WriRS   Wri13   BraRS   RegWri' RegWriI RegWriPC    RegWriMem   MemWri'
+slt     1           1           0       0       X       X       X       0   0   0   0       0       0       0       0       0       0           0           1
+nand    0           1           0       0       X       X       X       0   0   0   0       0       0       0       0       0       0           0           1
+j       X           X           X       X       X       X       X       0   0   1   X       X       X       X       1       X       X           X           1
+jal     X           X           X       X       X       X       X       0   0   1   X       X       1       X       0       0       1           0           1
+sub     0           0           0       0       X       X       1       0   0   0   0       0       0       0       0       0       0           0           1
+add     0           0           0       0       X       X       0       0   0   0   0       0       0       0       0       0       0           0           1
+inc     0           0           X       1       X       X       0       0   0   0   X       1       0       0       0       0       0           0           1
+srl     1           0           X       X       0       1       X       0   0   0   1       0       0       0       0       0       0           0           1
+sra     1           0           X       X       1       0       X       0   0   0   1       0       0       0       0       0       0           0           1
+jr      0           0           X       1       X       X       0       0   1   0   X       X       X       0       1       X       X           X           1
+bne     0           0           0       0       X       X       1       A'  0   0   X       X       X       1       1       X       X           X           1
+beq     0           0           0       0       X       X       1       A   0   0   X       X       X       1       1       X       X           X           1
+li      X           X           X       X       X       X       X       0   0   0   X       1       0       X       0       1       0           0           1
+lw      0           0           1       0       X       X       0       0   0   0   1       0       0       0       0       0       0           1           1
+sw      0           0           1       0       X       X       0       0   0   0   X       X       X       0       1       X       X           X           0
+sll     1           0           X       X       X       1       X       0   0   0   1       0       0       0       0       0       0           0           1
